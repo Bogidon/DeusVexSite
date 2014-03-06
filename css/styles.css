@@ -15,6 +15,16 @@ h1{
 .container-fluid {
 	background-color:#FFF1C6;
 }
+.featurette {
+	width: 100%;
+	margin: 0px;
+	padding-left: 15px;
+	padding-right: 15px; 
+	background-color:#FFF1C6;
+}
+.col-md-5 {
+	padding: 0px;
+}
 .navbar {
 	background-color:#FFF1C6;
 }
@@ -68,7 +78,6 @@ h1{
     height: 0;
     overflow: hidden;
 }
-
 #map iframe,   
 #map object,  
 #map embed {
@@ -77,4 +86,10 @@ h1{
     left: 0;
     width: 100%;
     height: 100%;
+}
+.contact {
+	text-align: center;
+}
+.contact h1 {
+	text-align: inherit;
 }
