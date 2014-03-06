@@ -1,0 +1,30 @@
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+body{
+	background-color:#FFF1C6;
+	overflow-x: hidden; 
+}
+.page-header{
+	background-image:url(../images/logo.png);
+	background-size: cover;
+		-webkit-background-size: cover;
+	    -moz-background-size: cover;
+	    -o-background-size: cover;
+	background-position: center center;
+	height: 300px;
+}
+.members{
+	text-align: center;
+}
+.thumbnail{
+	background-color: #B2A988;
+}
+#drake-logo{
+	background-color:#FFDE7A;
+	background-image:url(../images/logo.png);
+	
+}
