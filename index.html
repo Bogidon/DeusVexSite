@@ -15,26 +15,45 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
 	
-	<nav class="navbar navbar-default" role="navigation">
-	  <div class="container-fluid">
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	        <li class="active"><a href="#">Members</a></li>
-	        <li><a href="#">Team profile</a></li>
-	        <li><a href="#">Projects</a></li>
-	        <li><a href="#">Location</a></li>
-	        <li><a href="#">Contact</a></li>
-	  </div>
-	</nav>
+	 <div class="navbar navbar-default navbar-fixed-top" id="navbar" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">Hello</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button> -->
+          <a class="navbar-brand" href="#">Deus Vex</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#members">Members</a></li>
+            <li><a href="#profile">Team Profile</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+           
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.youtube.com/DeusVexMachina" target="_blank">YouTube</a></li>
+                <li><a href="https://itunes.apple.com/us/app/vex-scouter/id815631782?ls=1&mt=8" target="_blank">Scouting App</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
 
-	<div class="page-header">
+	<div class="page-header" >
 		<div id="bg-image">
 		<div id="logo-overlay"></div>
 		</div>
 	</div>
 	
+	<div class="nav-stopper" id="members"></div>
 	<hr class="featurette-divider">
 
 	<div class="container-fluid">
@@ -84,6 +103,7 @@
 		 </div>
 	</div>
 
+	<div class="nav-stopper" id="profile"></div>
 	<hr class="featurette-divider">
 
 	<div class="row featurette profile">
@@ -98,6 +118,7 @@
 	   	</div>
 	</div>
 
+	<div class="nav-stopper" id="location"></div>
 	<hr class="featurette-divider">
 
 	<div class="row featurette location">
@@ -109,24 +130,24 @@
 	        </div>
 	        <div class="col-md-7">
 	          <h1 class="featurette-heading">Location</h1>
-	          <p class="lead">We are part of the 2616 family of Vex teams from Cherry Hill High School East in Cherry Hill, New Jersey<br><br><u>Address:</u><br>Cherry Hill High School East <br> 1750 Kresson Road <br> Cherry Hill, New Jersey 08003</p>
+	          <p class="lead">We are part of the 2616 family of Vex teams from Cherry Hill High School East in Cherry Hill, New Jersey.<br><br><u>Address:</u><br>Cherry Hill High School East <br> 1750 Kresson Road <br> Cherry Hill, New Jersey 08003</p>
 	          <p></p>
 	        </div>
 	   	</div>
 	</div>
 
-<hr class="featurette-divider">
+	<div class="nav-stopper" id="contact"></div>
+	<hr class="featurette-divider">
 
-	<div class="row featurette location">
+	<div class="row featurette contact">
 	  	<div class="container-fluid">
 	        <div class="col-md-7">
-	          <h1 class="featurette-heading">Location</h1>
+	          <h1 class="featurette-heading">Contact</h1>
 	          <p class="lead">We are part of the 2616 family of Vex teams from Cherry Hill High School East in Cherry Hill, New Jersey<br><br><u>Address:</u><br>Cherry Hill High School East <br> 1750 Kresson Road <br> Cherry Hill, New Jersey 08003</p>
 	          <p></p>
 	        </div>
 	        <div class="col-md-5">
 	        	<div id="map">
-			         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1568071.28743071!2d-74.95138513860462!3d39.859917183829516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c1334c710f413f%3A0x17a270bfdcd9340a!2sCherry+Hill+High+School+East!5e0!3m2!1sen!2sus!4v1394069675676" width="600" height="450" frameborder="0" style="border:0"></iframe>
 	        </div>
 	   	</div>
 	</div>
@@ -143,4 +164,5 @@
 		<h1><a href="#">2616D : Deus Vex</a></h1>
 	</div>
 
+<script src="js/script.js"></script>
 </body>
