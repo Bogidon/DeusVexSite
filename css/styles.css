@@ -25,6 +25,9 @@ h1{
 .col-md-5 {
 	padding: 0px;
 }
+.featurette-divider {
+	margin: 10px 0px; 
+}
 .navbar {
 	background-color:#FFF1C6;
 }

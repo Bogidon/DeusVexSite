@@ -4,6 +4,7 @@ var lastId,
 	menuItems = topMenu.find("a:not(.dropdown a)");
 	scrollItems = menuItems.map(function(){
       var item = $($(this).attr("href"));
+      console.log(item);
       if (item.length) { return item; }
 	});
 
@@ -11,7 +12,10 @@ $(document).scroll(function(){
 	var fromTop = $(this).scrollTop()+topMenuHeight;
 
 	var cur = scrollItems.map(function(){
-     if ($(this).offset().top < fromTop)
+		if($(window).scrollTop() + $(window).height() == $(document).height())
+	       return scrollItems[scrollItems.length-1];
+	   	
+     	else if ($(this).offset().top < fromTop)
 	    return this;
    });
 
@@ -26,6 +30,9 @@ $(document).scroll(function(){
 	         .end().filter("[href=#"+id+"]").parent().addClass("active");
    }
  });         
+$("#projects").click(function(){
+	menuItems.parent().removeClass("active")
+});
 
 if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   var msViewportStyle = document.createElement('style')
